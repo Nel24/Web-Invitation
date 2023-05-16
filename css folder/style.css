@@ -8,14 +8,16 @@ body {
 h1{
   color: antiquewhite;
   font-size: inherit;
-  font-family: 'Stalemate', cursive;
-  font-size: 8rem;
+  font-family: 'Clicker Script', cursive;
+  font-size: 5rem;
   text-shadow: 0 0 5px black;
+  text-align: center;
 }
 h3{
   font-family: 'Genos', sans-serif;
   font-size: 1rem;
-  color: white;
+  color: wheat;
+  font-weight: bold;
   text-align: center;
 
 }
@@ -30,19 +32,19 @@ h4{
   font-family: Open Sans;
 }
 .navbar-nav {
-  width: 60%;
+  width: 80%;
 }
 .navbar-brand{
   margin-left: 20px;
 }
 .title{
+  top: 150px;
+  left: 850px;
   position: absolute;
-  padding-bottom: 250px;
   transform: translateZ(-5px)scale(1.5);/*The parallax effect*/
 }
 .title-content{
-    
-  padding: 50px 65px 50px;
+  /* padding: 50px 65px 50px;
   box-shadow: 20px 20px 50px rgba(0 , 0, 0, 0.5);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -50,7 +52,7 @@ h4{
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  width: 50%;
+   */
 }
 header{
   
@@ -69,7 +71,7 @@ header{
 }
 .heropage{
   position:absolute;
-  width: 110%;
+  width: 100%;
   object-fit: cover;
   z-index: -1;
 }
@@ -167,10 +169,10 @@ section{
   /* font-style: oblique; */
   font-family: Open Sans;
   writing-mode: vertical-rl;
+  top: 90px;
+  left: 30px;
   position: absolute;
-  margin-top: 700px;
-  margin-left: 1800px;
-  color: white;
+  color: black;
   font-family: 'Genos', sans-serif;
 }
 
