@@ -40,7 +40,16 @@ p{
   border-radius: 5px;
   height: auto;
   max-width: 100%;
-  
+}
+.col-lg-6 p{
+  padding: 50px 65px 50px;
+  box-shadow: 20px 20px 50px rgba(0 , 0, 0, 0.5);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .navbar {
@@ -61,7 +70,6 @@ p{
   background-clip: content-box;
   background-repeat: no-repeat;
   -ms-transform: rotate(20deg); /* IE 9 */
-  transform: rotate(20deg); */
   height: 500px;
   width: 600px;
   top: 150px;
