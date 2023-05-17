@@ -6,25 +6,43 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 h1{
-  color: antiquewhite;
+  color: #F3EBE1;
   font-size: inherit;
   font-family: 'Clicker Script', cursive;
-  font-size: 5rem;
+  font-size: 6rem;
   text-shadow: 0 0 5px black;
   text-align: center;
 }
 h3{
   font-family: 'Genos', sans-serif;
   font-size: 1rem;
-  color: wheat;
+  color: white;
   font-weight: bold;
-  text-align: center;
-
+  text-align: start;
+  
 }
 h4{
   font-family: 'Genos', sans-serif;/* R|M */
   display: inline-block;
 }
+p{
+  font-family: Open Sans;
+  color: #F3EBE1;
+  text-align: justify;
+}
+.container{
+  background-image: url(./images/Lovepik_com-401489487-red-paint.png);
+  background-size: contain;
+  display: flex;
+  gap: 40px;
+}
+.col-lg-6  img{
+  border-radius: 5px;
+  height: auto;
+  max-width: 100%;
+  
+}
+
 .navbar {
   background-color: white;
   font-size: small;
@@ -38,6 +56,14 @@ h4{
   margin-left: 20px;
 }
 .title{
+  /* background-image: url(./images/Paint\ red.png);
+  background-size: cover;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg); */
+  height: 500px;
+  width: 600px;
   top: 150px;
   left: 850px;
   position: absolute;
@@ -53,6 +79,7 @@ h4{
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
    */
+   text-align: center;
 }
 header{
   
@@ -64,11 +91,10 @@ header{
   transform-style: preserve-3d;
   z-index: -1;
 }
-.fa-rings-wedding{
+/* .fa-rings-wedding{
   width: 20%;
   display: inline-block;
-  
-}
+} */
 .heropage{
   position:absolute;
   width: 100%;
@@ -77,7 +103,7 @@ header{
 }
 section{
   /* font-size: 2rem; */
-  font-family: Arial;
+  font-family: Open Sans;
   padding: 1rem;
   background-image: linear-gradient(45deg, #000000, #434343);
   color: white;
@@ -95,7 +121,7 @@ section{
 }
 .parallax {
   /* The image used */
-  background-image: url(./images/HP2.jpg);
+  background-image: url(./images/R_M_0465.jpg);
 
   /* Set a specific height */
   min-height: 500px;
@@ -108,7 +134,7 @@ section{
 }
 .parallax1 {
   /* The image used */
-  background-image: url(./images/HP3.jpg);
+  background-image: url(./images/R_M_0331.jpg);
 
   /* Set a specific height */
   min-height: 500px;
@@ -122,7 +148,7 @@ section{
 
 .parallax2 {
   /* The image used */
-  background-image: url(./images/HP4.jpg);
+  background-image: url(./images/R_M_0204.jpg);
 
   /* Set a specific height */
   min-height: 500px;
@@ -136,7 +162,7 @@ section{
 
 .parallax3 {
   /* The image used */
-  background-image: url(./images/R_M_0204.jpg);
+  background-image: url(./images/R_M_0387.jpg);
 
   /* Set a specific height */
   min-height: 500px;
@@ -175,4 +201,14 @@ section{
   color: black;
   font-family: 'Genos', sans-serif;
 }
+span{
+  font-size: 2rem;
+  color: goldenrod;
+  text-decoration: underline;
 
+}
+
+.story-content{
+  height: auto;
+  padding: 15px;
+}
