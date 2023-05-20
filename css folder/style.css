@@ -1,20 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Poppins:wght@100;400&display=swap");
 
+:root{
+  --mainFont: 'Genos', sans-serif;
+  --spanColor: goldenrod;
+  --contentFont: Open Sans;
+  --spanFont: 'Tangerine', cursive;
+}
+
 body {
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+/************************************TAG SELECTOR*******************************************/
 h1{
-  color: #F3EBE1;
+  background-image: url('https://images.unsplash.com/photo-1536890274788-51861e124205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+  background-size: cover;/* line 17 - 21 are for bg clipping */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: inherit;
-  font-family: 'Clicker Script', cursive;
-  font-size: 6rem;
-  text-shadow: 0 0 5px black;
+  font-family: 'Miss Fajardose', cursive;
+  font-size: 7rem;
+  font-weight: bolder;
+  /* text-shadow: 0 0 5px black; */
   text-align: center;
 }
 h3{
-  font-family: 'Genos', sans-serif;
+  font-family: var(--mainFont);
   font-size: 1rem;
   color: white;
   font-weight: bold;
@@ -22,75 +36,52 @@ h3{
   
 }
 h4{
-  font-family: 'Genos', sans-serif;/* R|M */
+  background-image: url('https://images.unsplash.com/photo-1536890274788-51861e124205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+  background-size: cover;/* line 17 - 21 are for bg clipping */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: inherit;
+  font-family: 'Life Savers', cursive;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  /* text-shadow: 0 0 5px black; */
   display: inline-block;
 }
 p{
-  font-family: Open Sans;
-  color: #F3EBE1;
+  font-family: var(--contentFont);
+  font-size: 0.8rem;
+  color: black;
   text-align: justify;
+  text-indent: 30px;
 }
-.container{
-  background-image: url(./images/Lovepik_com-401489487-red-paint.png);
-  background-size: contain;
-  display: flex;
-  gap: 40px;
-}
-.col-lg-6  img{
-  border-radius: 5px;
-  height: auto;
-  max-width: 100%;
-}
-.col-lg-6 p{
-  padding: 50px 65px 50px;
-  box-shadow: 20px 20px 50px rgba(0 , 0, 0, 0.5);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
-}
-
+/************************************NAVBAR*******************************************/
 .navbar {
   background-color: white;
   font-size: small;
-  /* font-style: oblique; */
-  font-family: Open Sans;
+  font-family: var(--contentFont);
+  padding-right: 10px;
+}
+.navbar-brand {
+  display: inline-block;
+  background-image: url(./images/vecteezy_geometric-gold-frame_17059163_495.png);
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  padding-top: 20px;
 }
 .navbar-nav {
-  width: 80%;
+  margin-right: 20px;
+  text-align: center;
 }
-.navbar-brand{
-  margin-left: 20px;
-}
-.title{
-  /* background-image: url(./images/Paint\ red.png);
-  background-size: cover;
-  background-clip: content-box;
-  background-repeat: no-repeat;
-  -ms-transform: rotate(20deg); /* IE 9 */
-  height: 500px;
-  width: 600px;
-  top: 150px;
-  left: 850px;
-  position: absolute;
-  transform: translateZ(-5px)scale(1.5);/*The parallax effect*/
-}
-.title-content{
-  /* padding: 50px 65px 50px;
-  box-shadow: 20px 20px 50px rgba(0 , 0, 0, 0.5);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
-   */
-   text-align: center;
+/************************************TITLE*******************************************/
+.wrapper{
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;/* sets the 3d effect or parallex simpy it is the z axis or distance from observer to screen*/
 }
 header{
-  
   position: relative;
   display: flex;
   justify-content: center;
@@ -99,34 +90,153 @@ header{
   transform-style: preserve-3d;
   z-index: -1;
 }
-/* .fa-rings-wedding{
-  width: 20%;
-  display: inline-block;
-} */
-.heropage{
+.heropage{ /* The Cover Photo */
   position:absolute;
   width: 100%;
   object-fit: cover;
   z-index: -1;
 }
+.heropage{
+  transform: translateZ(-10px)scale(2);/*The parallax effect*/
+}
+.title{
+  
+  height: 500px;
+  width: 600px;
+  top: 150px;
+  left: 850px;
+  position: absolute;
+  transform: translateZ(-5px)scale(1.5);/*The parallax effect*/
+}
+.title-content{
+   text-align: center;
+}
+.scroll {
+  font-size: large;
+  writing-mode: vertical-rl;
+  top: 90px;
+  left: 30px;
+  position: absolute;
+  color: black;
+  font-family: var(--mainFont);
+}
+
+.parag{
+  color: whitesmoke;
+}
+
+/************************************SECTION*******************************************/
 section{
   /* font-size: 2rem; */
-  font-family: Open Sans;
+  font-family: var(--contentFont);
   padding: 1rem;
   background-image: linear-gradient(45deg, #000000, #434343);
   color: white;
   min-height: 300px;
 }
-.wrapper{
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;/* sets the 3d effect or parallex simpy it is the z axis or distance from observer to screen*/
+.container{
+  background-image: url(./images/SeekPng.com_holi-colour-splash-png_299204.png);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 40px;
+  margin: auto;
+}
+.col-lg-6  img{
+  border-radius: 5px;
+  height: auto;
+  max-width: 100%;
+}
+.col-lg-6 p{
+  padding: 10px;
+  box-shadow: 20px 20px 50px rgba(0 , 0, 0, 0.5);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* .col-lg-6{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.container-fluid.story-content {
+  /* background-image: linear-gradient(45deg, #434343, #C19A6B); */
+  background-image: url(./images/Lovepik_com-401489487-red-paint.png);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 15px;
+}
+.container-fluid.story-content p{
+  color: #000000;
+}
+span{
+  display: inline-block;
+  background-image: url(./images/black\ paint.png);
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  color: var(--spanColor);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  /* text-shadow: 0 0 5px black; */
+}
+.presence{
+  display: inline-block;
+  /* background-image: url(./images/14-white-grunge-brush-stroke-1.png); */
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  color: var(--spanColor);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+  /* text-shadow: 0 0 5px black; */
+}
+.colIntro{
+  text-align: center;
+  padding: 5px;
+}
+/************************************EVENTDETAILS*******************************************/
+
+img.location-map{
+  width: 60%;
 }
 
-.heropage{
-  transform: translateZ(-10px)scale(2);/*The parallax effect*/
+.colEvents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.event_Details{
+  margin: 20px;
+}
+/************************************CAROUSEL*******************************************/
+
+img.prenup-image{
+  max-width: 100%;
+  max-height: 100%;
+}
+#prenup-carousel{
+  max-width: 50%;
+  max-height: 50%;
+}
+.carousel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/************************************PARALLAX DIVS*******************************************/
 .parallax {
   /* The image used */
   background-image: url(./images/R_M_0465.jpg);
@@ -163,7 +273,7 @@ section{
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -181,42 +291,63 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/************************************CONTAINER-FLUID DIVS*******************************************/
 .container-fluid {
-  height: 300px;
-  background-image: linear-gradient(45deg, #C19A6B, #434343);
+  padding: 10px;
+  height: auto; 
+  background-image: url(./images/SeekPng.com_holi-colour-splash-png_299204.png);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.row {
+  align-items: center;
+  justify-content: center;
 }
 
 
-.navbar-brand{
-  width: 20%;
+/************************************MEDIA QUERIES*******************************************/
+
+@media only screen and (max-width: 828px) {
+  .heropage{
+    top: -50px;
+  }
+  header{
+    height: 40%;
+  }
+  .presence{
+    font-size: 1rem;
+  }
+  .parallax{
+    background-position: -200px;
+  }
+  .parallax1{
+    background-position: -150px;
+  }
+  .parallax2{
+    background-position: -400px;
+  }
+  .parallax3{
+    background-position: -500px;
+  }
+  img.location-map{
+    width: 80%;
+  }
 }
 
 
-.scroll {
-  font-size: large;
-  /* font-style: oblique; */
-  font-family: Open Sans;
-  writing-mode: vertical-rl;
-  top: 90px;
-  left: 30px;
-  position: absolute;
-  color: black;
-  font-family: 'Genos', sans-serif;
-}
-span{
-  font-size: 2rem;
-  color: goldenrod;
-  text-decoration: underline;
 
+img {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease;
 }
 
-.story-content{
-  height: auto;
-  padding: 15px;
+img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
+
