@@ -1,4 +1,9 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Poppins:wght@100;400&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
 
 :root{
   --mainFont: 'Genos', sans-serif;
@@ -12,6 +17,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 
 /************************************TAG SELECTOR*******************************************/
 h1{
@@ -32,11 +38,10 @@ h3{
   font-size: 1rem;
   color: white;
   font-weight: bold;
-  text-align: start;
-  
+  text-align: center; 
 }
 h4{
-  background-image: url('https://images.unsplash.com/photo-1536890274788-51861e124205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+  background-image: url("https://images.unsplash.com/photo-1556174645-bf4175d73e89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
   background-size: cover;/* line 17 - 21 are for bg clipping */
   background-clip: text;
   -webkit-background-clip: text;
@@ -53,7 +58,7 @@ p{
   font-size: 0.8rem;
   color: black;
   text-align: justify;
-  text-indent: 30px;
+  /* text-indent: 30px; */
 }
 /************************************NAVBAR*******************************************/
 .navbar {
@@ -71,7 +76,7 @@ p{
   padding-top: 20px;
 }
 .navbar-nav {
-  margin-right: 20px;
+  /* margin-right: 15px; */
   text-align: center;
 }
 /************************************TITLE*******************************************/
@@ -111,7 +116,7 @@ header{
 .title-content{
    text-align: center;
 }
-.scroll {
+/* .scroll {
   font-size: large;
   writing-mode: vertical-rl;
   top: 90px;
@@ -119,7 +124,7 @@ header{
   position: absolute;
   color: black;
   font-family: var(--mainFont);
-}
+} */
 
 .parag{
   color: whitesmoke;
@@ -130,25 +135,28 @@ section{
   /* font-size: 2rem; */
   font-family: var(--contentFont);
   padding: 1rem;
-  background-image: linear-gradient(45deg, #000000, #434343);
+  background-image: url("https://images.unsplash.com/photo-1556174645-bf4175d73e89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
   color: white;
   min-height: 300px;
 }
 .container{
-  background-image: url(./images/SeekPng.com_holi-colour-splash-png_299204.png);
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   gap: 40px;
   margin: auto;
+}
+.col-lg-4 p{
+  text-align: center;
+  margin-top: 20px;
+}
+.col-lg-4{
+  text-align: center;
 }
 .col-lg-6  img{
   border-radius: 5px;
   height: auto;
   max-width: 100%;
 }
-.col-lg-6 p{
+.col-lg-6 p, .col-lg-4 p{
   padding: 10px;
   box-shadow: 20px 20px 50px rgba(0 , 0, 0, 0.5);
   border-radius: 20px;
@@ -161,73 +169,109 @@ section{
   justify-content: center;
   text-align: center;
 }
-/* .col-lg-6{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* .carousel{
+  position: relative;
+  perspective: 1000px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+/* .carousel::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  bottom: -10px;
+  left: 10px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.8);
 } */
+/* .carousel::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  bottom: -10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.8);
+} */ */
 .container-fluid.story-content {
-  /* background-image: linear-gradient(45deg, #434343, #C19A6B); */
-  background-image: url(./images/Lovepik_com-401489487-red-paint.png);
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: auto;
   padding: 15px;
 }
 .container-fluid.story-content p{
-  color: #000000;
+  color: whitesmoke;
 }
-span{
+.sub_Heading{
   display: inline-block;
-  background-image: url(./images/black\ paint.png);
+  background-image: url("https://media.istockphoto.com/id/1433772840/photo/gold-background-or-texture-and-gradients-shadow.jpg?s=612x612&w=is&k=20&c=lhqed__U49Jxd5IIWaTwzLJEOXjhEDoNQ0K_9DF4o-s=");
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
-  color: var(--spanColor);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'MonteCarlo', cursive;
+  /* color: var(--spanColor); */
   font-size: 1.5rem;
   text-decoration: underline;
+  padding-left: 10px;
+  padding-right: 10px;
   /* text-shadow: 0 0 5px black; */
 }
 .presence{
   display: inline-block;
-  /* background-image: url(./images/14-white-grunge-brush-stroke-1.png); */
+  background-image: url("https://i.pinimg.com/564x/94/23/2b/94232b84ee3b5eea9f570e7a46998694.jpg");
   background-size: cover; /* Adjust as needed */
   background-repeat: no-repeat;
-  color: var(--spanColor);
-  font-size: 0.8rem;
-  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'MonteCarlo', cursive;
+  font-size: 32px;
   text-decoration: underline;
   /* text-shadow: 0 0 5px black; */
 }
 .colIntro{
   text-align: center;
   padding: 5px;
+  margin: 20px;
 }
 /************************************EVENTDETAILS*******************************************/
 
-img.location-map{
-  width: 60%;
-}
-
-.colEvents{
+.col_Church{
+  background-image: url(./images/Lapurisima.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5px;
 }
+.col_Lacasa{
+  background-image: url(./images/Lacasa_bg2.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
 .event_Details{
-  margin: 20px;
+  /* margin: 20px; */
 }
 /************************************CAROUSEL*******************************************/
 
+
 img.prenup-image{
-  max-width: 100%;
+  max-width: 80%;
   max-height: 100%;
+  border-radius: 20px;
 }
 #prenup-carousel{
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 90%;
+  max-height: 90%;
 }
 .carousel{
   display: flex;
@@ -235,11 +279,19 @@ img.prenup-image{
   align-items: center;
   justify-content: center;
 }
+/************************************GALLERY*******************************************/
+
+/* #gallery .row{
+  margin-inline: 150px;
+} */
+#gallery span{
+  margin: 20px;
+}
 
 /************************************PARALLAX DIVS*******************************************/
 .parallax {
   /* The image used */
-  background-image: url(./images/R_M_0465.jpg);
+  background-image: url(./images/R_M_0199.jpg);
 
   /* Set a specific height */
   min-height: 500px;
@@ -295,8 +347,8 @@ img.prenup-image{
 .container-fluid {
   padding: 10px;
   height: auto; 
-  background-image: url(./images/SeekPng.com_holi-colour-splash-png_299204.png);
-  background-position: right;
+  background-image: url("https://images.unsplash.com/photo-1556174645-bf4175d73e89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 16px;
@@ -321,7 +373,7 @@ img.prenup-image{
     height: 40%;
   }
   .presence{
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   .parallax{
     background-position: -200px;
@@ -330,24 +382,110 @@ img.prenup-image{
     background-position: -150px;
   }
   .parallax2{
-    background-position: -400px;
+    background-position: -700px;
   }
   .parallax3{
-    background-position: -500px;
+    background-position: -800px;
   }
-  img.location-map{
-    width: 80%;
-  }
+  #gallery .row{
+  margin-inline: auto;
+}
+img.prenup-image{
+  max-width: 70%;
+  max-height: 100%;
+  border-radius: 20px;
+}
 }
 
 
 
-img {
+/* img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   transition: box-shadow 0.3s ease;
 }
 
 img:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+} */
+
+/************************************ANIMATION*******************************************/
+.footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h2{
+  display: inline-block;
+  background-image: url("https://media.istockphoto.com/id/1433772840/photo/gold-background-or-texture-and-gradients-shadow.jpg?s=612x612&w=is&k=20&c=lhqed__U49Jxd5IIWaTwzLJEOXjhEDoNQ0K_9DF4o-s=");
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* font-family: 'MonteCarlo', cursive; */
+  /* color: var(--spanColor); */
+  font-size: 1.4rem;
+  /* text-decoration: underline; */
+  /* text-shadow: 0 0 5px black; */
+}
+.icons{
+  max-width: 30%;
+  height: auto;
+  margin-top: -20px;
+}
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background-image: url('https://images.unsplash.com/photo-1516041774595-cc1b7969480c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color: whitesmoke;
+	font-family: var(--mainFont);
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	/* text-shadow:0px 1px 0px #ffee66; */
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myButton {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e74c3c;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  animation: zoomInOut 2s infinite alternate;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.myButton:focus {
+  outline: none;
 }
 
