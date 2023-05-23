@@ -79,6 +79,14 @@ p{
   /* margin-right: 15px; */
   text-align: center;
 }
+.nav-link{
+  background-image: url("https://media.istockphoto.com/id/1433772840/photo/gold-background-or-texture-and-gradients-shadow.jpg?s=612x612&w=is&k=20&c=lhqed__U49Jxd5IIWaTwzLJEOXjhEDoNQ0K_9DF4o-s=");
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 /************************************TITLE*******************************************/
 .wrapper{
   height: 100vh;
@@ -182,8 +190,6 @@ section{
   bottom: -10px;
   left: 10px;
   /* background-color: rgba(0, 0, 0, 0.5); */
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.8);
-} */
 /* .carousel::after {
   content: "";
   position: absolute;
@@ -256,10 +262,6 @@ section{
   justify-content: center;
   align-items: center;
   margin: 5px;
-}
-
-.event_Details{
-  /* margin: 20px; */
 }
 /************************************CAROUSEL*******************************************/
 
@@ -382,10 +384,10 @@ img.prenup-image{
     background-position: -150px;
   }
   .parallax2{
-    background-position: -700px;
+    background-position: -450px;
   }
   .parallax3{
-    background-position: -800px;
+    background-position: -550px;
   }
   #gallery .row{
   margin-inline: auto;
@@ -397,16 +399,6 @@ img.prenup-image{
 }
 }
 
-
-
-/* img {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 0.3s ease;
-}
-
-img:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-} */
 
 /************************************ANIMATION*******************************************/
 .footer
