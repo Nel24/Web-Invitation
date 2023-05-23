@@ -292,8 +292,8 @@ img.prenup-image{
 
 /************************************PARALLAX DIVS*******************************************/
 .parallax {
-  /* The image used */
-  background-image: url(./images/R_M_0199.jpg);
+  /* The image used 199 */
+  background-image: url(./images/R_M_0072.jpg);
 
   /* Set a specific height */
   min-height: 500px;
@@ -306,7 +306,7 @@ img.prenup-image{
 }
 .parallax1 {
   /* The image used */
-  background-image: url(./images/R_M_0331.jpg);
+  background-image: url(./images/R_M_0083.jpg);
 
   /* Set a specific height */
   min-height: 500px;
@@ -334,7 +334,7 @@ img.prenup-image{
 
 .parallax3 {
   /* The image used */
-  background-image: url(./images/R_M_0387.jpg);
+  background-image: url(./images/R_M_0103.jpg);
 
   /* Set a specific height */
   min-height: 500px;
@@ -378,16 +378,16 @@ img.prenup-image{
     font-size: 1.8rem;
   }
   .parallax{
-    background-position: -200px;
+    background-position: -430px;
   }
   .parallax1{
-    background-position: -150px;
+    background-position: -450px;
   }
   .parallax2{
     background-position: -450px;
   }
   .parallax3{
-    background-position: -550px;
+    background-position: -340px;
   }
   #gallery .row{
   margin-inline: auto;
