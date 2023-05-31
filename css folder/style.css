@@ -124,16 +124,6 @@ header{
 .title-content{
    text-align: center;
 }
-/* .scroll {
-  font-size: large;
-  writing-mode: vertical-rl;
-  top: 90px;
-  left: 30px;
-  position: absolute;
-  color: black;
-  font-family: var(--mainFont);
-} */
-
 .parag{
   color: whitesmoke;
 }
@@ -177,29 +167,6 @@ section{
   justify-content: center;
   text-align: center;
 }
-/* .carousel{
-  position: relative;
-  perspective: 1000px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-/* .carousel::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 10px;
-  bottom: -10px;
-  left: 10px;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-/* .carousel::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 10px;
-  bottom: -10px;
-  left: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.8);
-} */ */
 .container-fluid.story-content {
   height: auto;
   padding: 15px;
